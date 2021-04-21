@@ -26366,7 +26366,8 @@ try {
         right: 'auto',
         bottom: 'auto',
         marginRight: '-50%',
-        transform: 'translate(-50%, -50%)'
+        transform: 'translate(-50%, -50%)',
+        overflow: 'none'
       }
     };
     const masonryOptions = {
@@ -26387,7 +26388,7 @@ try {
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53,
+          lineNumber: 54,
           columnNumber: 9
         }
       }, /*#__PURE__*/_reactDefault.default.createElement(_reactModalDefault.default, {
@@ -26400,22 +26401,23 @@ try {
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58,
+          lineNumber: 59,
           columnNumber: 13
         }
       }, /*#__PURE__*/_reactDefault.default.createElement("img", {
+        className: "modal-img",
         src: clickedImage,
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59,
+          lineNumber: 60,
           columnNumber: 17
         }
       })), state.length === 0 ? /*#__PURE__*/_reactDefault.default.createElement("p", {
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62,
+          lineNumber: 63,
           columnNumber: 35
         }
       }, "No Photo Found") : state.map(image => {
@@ -26427,7 +26429,7 @@ try {
             __self: undefined,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 64,
+              lineNumber: 65,
               columnNumber: 28
             }
           })
@@ -26446,7 +26448,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","./getImages":"674KD","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Image":"4pkFS","react-masonry-component":"4QQWd","react-modal":"16aHo"}],"674KD":[function(require,module,exports) {
+},{"react":"3b2NM","./getImages":"674KD","./Image":"4pkFS","react-masonry-component":"4QQWd","react-modal":"16aHo","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"674KD":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 _parcelHelpers.export(exports, "getImages", function () {
@@ -26541,7 +26543,48 @@ exports.export = function (dest, destName, get) {
     get: get
   });
 };
-},{}],"4Jj4f":[function(require,module,exports) {
+},{}],"4pkFS":[function(require,module,exports) {
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _jsxFileName = "C:\\Users\\Mahesh\\Downloads\\Photo Search App\\src\\Image.jsx";
+  const Image = ({urls, onClick}) => {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("img", {
+        style: {
+          margin: '2px'
+        },
+        width: "350px",
+        src: urls.small,
+        onClick: () => {
+          onClick(urls.regular);
+        },
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 5,
+          columnNumber: 10
+        }
+      })
+    );
+  };
+  _c = Image;
+  exports.default = Image;
+  var _c;
+  $RefreshReg$(_c, "Image");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+
+},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4Jj4f":[function(require,module,exports) {
 "use strict";
 var Refresh = require('react-refresh/runtime');
 function debounce(func, delay) {
@@ -26698,48 +26741,7 @@ function registerExportsForReactRefresh(module) {
   }
 }
 
-},{"react-refresh/runtime":"592mh"}],"4pkFS":[function(require,module,exports) {
-var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-helpers.prelude(module);
-try {
-  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
-  _parcelHelpers.defineInteropFlag(exports);
-  var _react = require('react');
-  var _reactDefault = _parcelHelpers.interopDefault(_react);
-  var _jsxFileName = "C:\\Users\\Mahesh\\Downloads\\Photo Search App\\src\\Image.jsx";
-  const Image = ({urls, onClick}) => {
-    return (
-      /*#__PURE__*/_reactDefault.default.createElement("img", {
-        style: {
-          margin: '2px'
-        },
-        width: "350px",
-        src: urls.small,
-        onClick: () => {
-          onClick(urls.regular);
-        },
-        __self: undefined,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 5,
-          columnNumber: 10
-        }
-      })
-    );
-  };
-  _c = Image;
-  exports.default = Image;
-  var _c;
-  $RefreshReg$(_c, "Image");
-  helpers.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-
-},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4QQWd":[function(require,module,exports) {
+},{"react-refresh/runtime":"592mh"}],"4QQWd":[function(require,module,exports) {
 var isBrowser = typeof window !== 'undefined';
 var Masonry = isBrowser ? window.Masonry || require('masonry-layout') : null;
 var imagesloaded = isBrowser ? require('imagesloaded') : null;
@@ -38401,7 +38403,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-debounce-input":"45sto"}],"45sto":[function(require,module,exports) {
+},{"react":"3b2NM","react-debounce-input":"45sto","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"45sto":[function(require,module,exports) {
 "use strict";
 
 var _require = require('./Component'),
